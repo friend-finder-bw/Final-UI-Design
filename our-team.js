@@ -5,8 +5,13 @@ siteNav[2].textContent = "The Story";
 siteNav[3].textContent = "The Team";
 siteNav[4].textContent = "Log In/Sign Up";
 
-const navOrange = document.querySelectorAll("nav a");
-for (let i = 0; i < nav.length; i++) {
-  navGreen[i].style.color = "orange";
-}
+const floatingNav = document.querySelector("header");
+floatingNav.addEventListener('reset', () => {
+    floatingNav.preventDefault();
+});
+
+const footer = document.querySelector('footer');
+footer.addEventListener('click', () => {
+    alert("Copyright Friend Finder 2019");
+});
 

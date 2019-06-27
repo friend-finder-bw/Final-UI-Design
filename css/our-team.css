@@ -20,7 +20,10 @@
 /* HEADER */
 
 header {
-	display: flex;
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 1500px;
 }
 
 header nav {
@@ -55,6 +58,13 @@ header nav a {
     width: 1000px;
     padding: 15px;
     background-color: #fab95b;
+}
+
+
+.staff-bios .first-bio-intro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
 .staff-bios .bio-intro {
