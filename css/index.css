@@ -118,11 +118,11 @@ h1 {
 }
 @media (max-width: 800px) {
   .menubar {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: center;
     justify-content: space-evenly;
-    justify-content: space-around;
     margin: 0 auto;
     font-size: 1.2rem;
     color: #ff8303;
@@ -133,15 +133,34 @@ h1 {
 }
 @media (max-width: 500px) {
   .menubar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    padding: 20px;
     width: 100%;
     margin: 0 auto;
-    color: orange;
     font-size: 1.3rem;
   }
-  .menubar a:hover {
-    color: #373a6d;
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      background:  orange;
+    
+    }
   }
-}
+  .menubar a:hover {
+    color: white;
+    }
+    .menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+  }
+
 .logo-image {
   display: flex;
   flex-wrap: wrap;
@@ -155,8 +174,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: center;
-    width: 15%;
-    height: 2rem;
+    width: 20%;
+    height: 4rem;
     border-radius: 1.5rem;
   }
 }
@@ -165,9 +184,10 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: center;
-    width: 15%;
-    height: 2rem;
+    width: 35%;
+    height: 4.5rem;
     border-radius: 1.5rem;
+    margin-bottom: 20px
   }
 }
 .mission-sttmnt {
@@ -277,9 +297,8 @@ h1 {
     flex-wrap: wrap;
     flex-direction: center;
     width: 100%;
-    height: 70%;
     margin-top: 22%;
-    margin-right: 90%;
+    margin-right: 90px;
     background: #373a6d;
     color: #ff8303;
     font-size: 2rem;
@@ -426,7 +445,7 @@ img {
     margin: 0 auto;
     font-size: 1rem;
     color: #ff8303;
-    padding-top: 30px;
+    
   }
 }
 @media (max-width: 500px) {
@@ -465,13 +484,14 @@ img {
   justify-content: space-evenly;
   justify-content: space-around;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 @media (max-width: 800px) {
   .bottom-nav {margin-top: 60px;
   }
   .bottom-nav a:hover {
     color: #373a6d;
+    font-size: 3.5rem;
   }
 }
 @media (max-width: 500px) {
@@ -479,6 +499,7 @@ img {
   
   .bottom-nav a:hover {
     color: white;
+    
     
   }
 }
@@ -514,7 +535,8 @@ footer a {
 }
 footer p {
   color:#373a6d;
-  font-size: 1.5rem;
+  margin: 0 auto;
+  font-size: 1.2rem;
   padding-top: 60px;
   margin:right;
 
