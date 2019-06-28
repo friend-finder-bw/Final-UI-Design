@@ -14,13 +14,17 @@
 	display: block;
  	margin-left: auto;
 	margin-right: auto;
-	border-radius: 15px;  
+    border-radius: 15px;  
+    margin-bottom: 15px;
 }
 
 /* HEADER */
 
 header {
-	display: flex;
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 1050px;
 }
 
 header nav {
@@ -38,6 +42,10 @@ header nav a {
 }
 
 /* MAIN CONTENT */
+
+.staff-bios {
+    margin-top: 50px;    
+}
 
 .staff-bios .first-bio {
     width: 1000px;
@@ -60,6 +68,12 @@ header nav a {
 .staff-bios .bio-intro {
     display: flex;
     justify-content: space-between;
+}
+
+.staff-bios .first-bio .first-bio-intro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;    
 }
 
 h1 {
@@ -102,6 +116,36 @@ footer {
 	font-family: 'Arvo', serif;
 	width: 1000px;
     margin-left: 375px;
+    text-align: center;
+}
+
+/* BIO IMAGE LINK TO GITHUB */
+
+.staff-bios .bio-img-container {
+    position: relative;
+}
+
+.staff-bios .bio-img-container:hover .overlay {
+    opacity: 1;
+}
+
+.staff-bios .icon {
+    color: white;
+    background-color: #1a3263;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 90px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.staff-bios .overlay {
+    opacity: 0;
+    transition: .3s ease;
+    border-radius: 100px;
 }
 
 /* MOBILE VERSION */
@@ -109,20 +153,38 @@ footer {
 @media (max-width: 500px) {
     .container {
 	    width: 500px;
-    } 
+    }
+
+    .container .FF {
+        margin-bottom: 1px;
+    }
+
+    header {
+        width: 485px;
+        background-color: transparent;
+        margin-bottom: 275px;
+        position: absolute;
+    }
 
     header nav {
-		width: 500px;
+        display: flex;
+        flex-direction: column;
+		width: 485px;
 		vertical-align: top;
-		margin-top: 25px;
-	}
+        margin-top: 25px;
+    }
 
 	header nav a {
-		margin: 15px;
-		font-size: 16px;
+		margin: 8px;
+		font-size: 24px;
 		text-decoration: none;
-		color: #373a6d;
-    } 
+        color: #373a6d;
+        text-align: center;
+    }
+
+    .staff-bios {
+        margin-top: 300px;    
+    }
 
     .staff-bios .first-bio {
         width: 455px;
@@ -151,5 +213,18 @@ footer {
 
     footer {
         margin-left: 125px;
+        text-align: center;
+    }
+
+    body {
+        background: -webkit-linear-gradient(left, #f16821, #e8e2db);
+        background: linear-gradient(to right, #f16821, #e8e2db);
     }
 }
+
+
+
+
+
+
+

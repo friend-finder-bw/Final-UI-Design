@@ -14,18 +14,22 @@
 	display: block;
  	margin-left: auto;
 	margin-right: auto;
-	border-radius: 15px;  
+	border-radius: 15px;
+	margin-bottom: 15px;  
 }
 
 /* HEADER */
 
 header {
 	display: flex;
+	position: fixed;
+	background-color: white;
 }
 
 header nav {
   width: 1000px;
   vertical-align: top;
+  margin-bottom: 25px;
   margin-top: 25px;
 }
 
@@ -48,6 +52,7 @@ header nav a {
 	width: 1000px;
 	height: 600px;
 	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
 .main-content .top-content {
@@ -133,8 +138,9 @@ footer {
 	color: #373a6d;
 	font-family: 'Arvo', serif;
 	width: 1000px;
-	margin-left: 580px;
+	margin-left: 350px;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 /* MOBILE VERSION */
@@ -144,13 +150,13 @@ footer {
 	}
 
 	header nav {
-		width: 500px;
+		width: 485px;
 		vertical-align: top;
 		margin-top: 25px;
 	}
 
 	header nav a {
-		margin: 15px;
+		margin: 8px;
 		font-size: 16px;
 		text-decoration: none;
 		color: #373a6d;
@@ -208,11 +214,16 @@ footer {
 	font-family: 'Arvo', serif;
 	width: 500px;
 	margin-left: 125px;
+	text-align: center;
 	}
+
+	body {
+        background: -webkit-linear-gradient(left, #f16821, #e8e2db);
+        background: linear-gradient(to right, #f16821, #e8e2db);
+    }
 }
 
 
-  
 
 
 
