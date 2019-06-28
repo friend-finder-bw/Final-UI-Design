@@ -172,7 +172,6 @@ h1 {
       .MenuOpt {
         display: flex;
         flex-wrap: wrap;
-        flex-direction:column;
         background: orange;
         color: #373a6d
       }
@@ -185,6 +184,7 @@ h1 {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+     
 
     }
 
@@ -200,7 +200,8 @@ h1 {
     }
    
     @media (max-width: 500px) {
-      .hidden {display: none;
+      .hidden {
+        display: none;
       
       }
     }
@@ -513,16 +514,8 @@ img {
   font-size: 15px;
   transition: 0.4s;
 }
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
+
+
 .bottom-nav {
   display: flex;
   flex-wrap: wrap;
@@ -544,7 +537,7 @@ img {
   
   
   .bottom-nav a:hover {
-    color: #373a6d;
+    color: white;
     
     
   }
