@@ -7,6 +7,7 @@ body{
 	width: 100%;
 }
 
+
 .container {
 	width: 85%;
 	margin: 0 auto;
@@ -41,7 +42,6 @@ nav {
 nav a {
 	display: flex;
 	flex-wrap: wrap;
-
 	justify-content: space-evenly;
   font-size: 16px;
   text-decoration: none;
@@ -54,6 +54,7 @@ nav a {
 	margin-left: 20px;
 	margin-right: 20px;
 	font-size: 18px;
+	margin-top: 50px
 }
 .main-content .top-img {
 	margin-top: 50px;
@@ -76,6 +77,7 @@ nav a {
 	height: 350px;
 	margin-left: 20px;
 	margin-right: 20px;
+	margin-top: 50px
 }
 
 .main-content .middle-content {
@@ -132,6 +134,7 @@ span {
 	width: 600px;
 	margin-left: 200px;
 	margin-bottom: 50px;
+
 }
 
 .main-content .product-mobile {
@@ -143,7 +146,7 @@ span {
 	width: 600px;
 	height: 600px;
 	padding-bottom: 25px;
-	border-bottom: 2px dashed;
+	margin-top: 100px;
 }
 
 /* FOOTER */
@@ -162,12 +165,24 @@ footer {
 @media (max-width: 500px) {
 	.container {
 		width: 100%;
+	
 	}
 
-	header nav {
-		width: 500px;
-		vertical-align: top;
-		margin-top: 25px;
+	.main-img {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
+
+	.menubar {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around
+	}
+
+	.menubar .menuAcc{
+		font-size: .65rem;
 	}
 
 	header nav a {
@@ -175,34 +190,65 @@ footer {
 		font-size: 16px;
 		text-decoration: none;
 		color: #373a6d;
+		
 	}
 
 	.main-content .top-img {
 		display: none;
+		
 	}
 
 	.main-content .top-content {
 		display: flex;
 		flex-direction: column;
-		padding: 15px;
 		margin-bottom: 0.01px;
+	
 	}
 
 	.main-content .main-img {
-		width: 420px;
+		display: flex;
+		flex-wrap: wrap;
+		width: 92%;
 		height: 270px;
 		margin-top: 25px;
+
+	}
+
+	.main-content .bottom-img {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 90%;
+		height: 270px;
+		margin-top: 580px
 	}
 
 	.main-content .middle-content {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column-reverse;
-		padding: 15px;
+	
+	}
+
+	.main-content .middle-content2 {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		
 	}
 
 	.main-content .bottom-content {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
+		margin-top: 100px;
+	
+	}
+
+	.imgBorder {
+
+		
+		border: 2px black solid
 	}
 
 	span {
@@ -211,13 +257,7 @@ footer {
 		transform: rotate(90deg);
 	}
 
-	.main-content .infographic {
-		display: flex;
-		flex-direction: column;
-		width: 485px;
-		margin-left: 0.01px;
-	}
-
+	
 	.main-content .infographic-img {
 		display: none;
 	}
@@ -225,10 +265,126 @@ footer {
 	footer {
 	margin-top: -25px;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	color: #373a6d;
 	font-family: 'Arvo', serif;
-	width: 500px;
-	margin-left: 125px;
+	width: 100%;
+	margin-left: 3px;
+	font-size: .8rem;
+	}
+}
+
+
+/* Table VERSION */
+@media (max-width: 800px) {
+	.container {
+		width: 80%;
+	}
+
+	.main-img {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
+
+	.menubar {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around
+	}
+
+	.menubar .menuAcc{
+		font-size: .65rem;
+	}
+
+	header nav a {
+		margin: 15px;
+		font-size: 16px;
+		text-decoration: none;
+		color: #373a6d;
+		
+	}
+
+	.main-content .top-img {
+		display: none;
+		
+	}
+
+	.main-content .top-content {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0.01px;
+	
+	}
+
+	.main-content .main-img {
+		display: flex;
+		flex-wrap: wrap;
+		width: 92%;
+		height: 270px;
+		margin-top: 25px;
+	}
+
+	.main-content .bottom-img {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 90%;
+		height: 270px;
+		margin-top: 670px;
+	}
+
+	.main-content .middle-content {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	
+	}
+
+	.main-content .middle-content2 {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		
+	}
+
+	.main-content .bottom-content {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin-top: 100px;
+	
+	}
+
+	.imgBorder {
+
+		
+		border: 2px black solid
+	}
+
+	span {
+		margin-top: 240px;
+		margin-bottom: -175px;
+		transform: rotate(90deg);
+	}
+
+	
+	.main-content .infographic-img {
+		display: none;
+	}
+
+	footer {
+	margin-top: -25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #373a6d;
+	font-family: 'Arvo', serif;
+	width: 100%;
+	margin-left: 3px;
+	font-size: .8rem;
 	}
 }
 
