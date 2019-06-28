@@ -43,6 +43,7 @@ header nav a {
 	margin-left: 20px;
 	margin-right: 20px;
 	font-size: 18px;
+	text-align: center;
 }
 
 .main-content .regular-content {
@@ -56,16 +57,6 @@ header nav a {
 	margin-bottom: 50px;
 }
 
-.main-content .fact-content h4 {
-	font-style: italic;
-}
-
-.main-content .fact-content {
-	width: 200px;
-	font-size: 20px;
-	margin-bottom: 25px;
-}
-
 .main-content .main-img {
 	width: 500px;
 	height: 325px;
@@ -73,6 +64,31 @@ header nav a {
 	margin-right: 20px;
 	border-radius: 25px;
 }
+
+.main-content .fact-content {
+	display: flex;
+	width: 1000px;
+}
+
+.main-content .fact-content ul {
+	margin-top: 100px;
+}
+
+.main-content .fact-content li {
+	width: 340px;
+	font-style: italic;
+	font-size: 22px;
+	margin-top: 50px;
+}
+
+.main-content .fact-content p {
+	color: #f16821;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 100px;
+	font-style: bold;
+}
+
 
 button {
 	color: white;
@@ -96,21 +112,11 @@ button {
     padding: 10px;
 }
 
-.main-content .infographic {
-	display: flex;
-	flex-direction: column;
-	width: 600px;
-	margin-left: 200px;
-	margin-bottom: 50px;
-}
-
 .infographic-img {
 	margin-top: 25px;
 	width: 600px;
 	height: 600px;
 	padding-bottom: 25px;
-	border-bottom: 2px dashed;
-	margin-left: 450px;
 }
 
 /* FOOTER */
@@ -190,7 +196,21 @@ footer {
 	body {
         background: -webkit-linear-gradient(left, #f16821, #e8e2db);
         background: linear-gradient(to right, #f16821, #e8e2db);
-    }
+	}
+	
+	.main-content .fact-content p {
+		color: #373a6d;
+		margin-left: 75px;
+	}
+
+	.main-content .fact-content li {
+		margin-left: 65px;
+		text-align: center;
+	}
+
+	.main-content .fact-content ul {
+		margin-top: 50px;
+	}
 }
 
 
