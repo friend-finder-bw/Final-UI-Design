@@ -29,8 +29,8 @@ header {
 header nav {
   width: 1000px;
   vertical-align: top;
-  margin-top: 25px;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 header nav a {
@@ -63,7 +63,7 @@ header nav a {
 .main-content .main-img {
 	width: 500px;
 	height: 350px;
-	margin-left: 20px
+	margin-left: 20px;
 	margin-right: 20px;
 }
 
@@ -140,6 +140,7 @@ footer {
 	width: 1000px;
 	margin-left: 580px;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 /* MOBILE VERSION */
@@ -213,6 +214,7 @@ footer {
 	font-family: 'Arvo', serif;
 	width: 500px;
 	margin-left: 125px;
+	text-align: center;
 	}
 
 	body {

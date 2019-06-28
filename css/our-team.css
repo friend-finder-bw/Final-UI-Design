@@ -116,6 +116,7 @@ footer {
 	font-family: 'Arvo', serif;
 	width: 1000px;
     margin-left: 375px;
+    text-align: center;
 }
 
 /* BIO IMAGE LINK TO GITHUB */
@@ -212,6 +213,7 @@ footer {
 
     footer {
         margin-left: 125px;
+        text-align: center;
     }
 
     body {

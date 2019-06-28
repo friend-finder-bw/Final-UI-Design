@@ -14,3 +14,5 @@ footer.addEventListener('click', () => {
     alert("Copyright Friend Finder 2019");
 });
 
+
+
