@@ -106,10 +106,10 @@ h1 {
   align-items: baseline;
   justify-content: space-evenly;
   justify-content: space-around;
-  width: 90%;
+  width: 95%;
   padding-top: 20px;
   color: #ff8303;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   /* Tablet */
   /* Mobile */
 }
@@ -153,13 +153,59 @@ h1 {
     }
   }
   .menubar a:hover {
-    color: white;
+    color: #373a6d;
     }
-    .menu {
-    display: flex;
+
+    @media (max-width: 500px) {
+      .menubar a:hover {
+      color: white
+      }
+    }
+
+    .MenuOpt {
+    display: none;
     flex-wrap: wrap;
     flex-direction:column;
-  }
+    background: orange;
+    }
+    @media (max-width: 500px) {
+      .MenuOpt {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        background: orange;
+        color: #373a6d
+      }
+    }
+   
+     
+
+    .menus {
+      width: 85%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+    }
+
+    @media (max-width: 800px){
+      
+      .menus {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      }
+    }
+   
+    @media (max-width: 500px) {
+      .hidden {display: none;
+      
+      }
+    }
+  
+
 
 .logo-image {
   display: flex;
@@ -250,7 +296,7 @@ h1 {
 }
 @media (max-width: 500px) {
   .image-div .main-image {
-    width: 40rem;
+    width: 35%;
     height: 20rem;
     border-radius: 1.5rem;
   }
@@ -498,7 +544,7 @@ img {
   
   
   .bottom-nav a:hover {
-    color: white;
+    color: #373a6d;
     
     
   }
@@ -536,7 +582,7 @@ footer a {
 footer p {
   color:#373a6d;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: .5rem;
   padding-top: 60px;
   margin:right;
 
