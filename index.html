@@ -4,21 +4,27 @@
     <head>
         <meta charset="utf-8">
         <title>Friend Finder</title>
+    
         <link rel="stylesheet" href="css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
         <link content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./home/home.js" async></script>
     </head>   
     <body>
         <div class="homepage-container">      
             <nav class='menubar'>  
-                    <img class='logo-image' src= 'images/logo.png'>    
-                    <a class= "menu" href ='index.html'>Home</a>
-                    <a class= "menu" href ='./app.html'>The App</a>
-                    <a class="menu" href='our-story.html'>The Story</a>
-                    <a class= "menu" href ='./our-team.html'>The Team</a>
-                    <a href ='https://dreamy-golick-d60dbe.netlify.com/'>Login/Sign Up</a>  
-            </nav>      
+                    <img class='logo-image' src= 'images/logo.png'> 
+
+                    <a class ='MenuOpt'>Click For Menus</a>
+                <div class= 'menus hidden'>
+                    <a class= "menuAcc" href ='index.html'>Home</a>
+                    <a class= "menuAcc menu" href ='./app.html'>The App</a>
+                    <a class= "menuAcc menu" href ='./our-story.html'>The Story</a>
+                    <a class= "menuAcc" href ='./our-team.html'>Our Team</a>
+                    <a href= 'https://dreamy-golick-d60dbe.netlify.com/'>Login/Sign Up</a>  
+                </div>
+                </nav>      
             <div class= 'image-div'>
                     <h1 class='mission-sttmnt'><em>
                         <p>"Bringing People Together Through Common Interests"</em>
@@ -27,7 +33,7 @@
             <h1 class= 'title'>What is Friend Finder</h1>
             
             <div>
-                <button class= 'button'>Sign up</button>
+                <a href= "https://dreamy-golick-d60dbe.netlify.com/#/"><button class= 'button'>Sign up</button></a>
             </div>
                 <img class= 'second-image' src ='images/nicholas-green-nPz8akkUmDI-unsplash.jpg'>
                 <p class= 'homepage-paragraph'>Our lives get busy.  Sometimes so busy, we tend neglect other areas... Mainly our social life
@@ -40,15 +46,14 @@
                 </p>
             </div> 
             <nav class="bottom-nav">
-                <a href="./index.html">Home</a>
-                <a href="./app.html">The App</a>
-                <a href="./our-story.html">The Story</a>
-                <a href="./our-team.js">Our Team</a>
-                <a href= '#'>Contact Us</a>
-                <a href ='https://dreamy-golick-d60dbe.netlify.com/'>Login/Sign Up</a>
+                    <a class= "menuAcc" href ='index.html'>Home</a>
+                    <a class= "menuAcc menu" href ='./app.html'>The App</a>
+                    <a class= "menuAcc menu" href ='./our-story.html'>The Story</a>
+                    <a class= "menuAcc" href ='./our-team.html'>Our Team</a>
+                    <a href ='https://dreamy-golick-d60dbe.netlify.com/'>Login/Sign Up</a> 
             </nav>
                 <footer>
-                    <p>Copywright 2019 &#169</p>
+                    <p>&#169 Friend Finder All rights reserved</p>
                 </footer>         
         </div><!-- homepage- container -->          
     </body>
